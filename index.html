@@ -38,9 +38,10 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script> -->
 
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -69,8 +70,23 @@
         <a href="#">Let's explore Chess</a>
       </div>
       <div class="imgBx">
-        <img src="./assets/slide1.jpg" alt="" />
+        <img src="./assets/chessboard/chess.jpg" alt="" />
       </div>
+    </section>
+
+    <section class="history" id="history">
+
+      <h3>History of Chess</h3>
+
+      <div class="info">
+        <div class="textBox">
+          <h2>The history of chess can be traced back nearly 1500 years, although the earliest origins are uncertain. The earliest predecessor of the game probably originated in India, before the 6th century AD. ... When the Arabs conquered Persia, chess was taken up by the Muslim world and subsequently spread to Southern Europe.</h2>
+        </div>
+        <div class="imgBx">
+          <img src="./assets/chessboard/history.jpg" alt="">
+        </div>
+      </div>
+
     </section>
 
     <section class="players" id="particles-js">
@@ -79,6 +95,7 @@
       <h3>Meet the Best players</h3>
 
       <!-- Swiper -->
+
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -651,11 +668,24 @@
         </div>
       </div>
     </section>
+    
+    <section class="tourn" id="tourn">
+      
+    </section>
+
+    <section class="credits" id="credits">
+      <div class="creator">
+        <p>© Jay Mehta 2021</p>
+        <p>Image credits to <a href="https://google.com">Google</a></p>
+      </div>
+    </section>
+  
+    
   </body>
 
-  <script src="./particles.min.js"></script>
-  <script src="./app.js"></script>
-  <script src="./app2.js"></script>
+  <script src="./particles.js/particles.min.js"></script>
+  <script src="./particles.js/app.js""></script>
+  <script src="./particles.js/app2.js"></script>
 
   <script>
     window.addEventListener("scroll", () => {

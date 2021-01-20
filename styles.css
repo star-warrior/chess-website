@@ -7,9 +7,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
-}
-
 .fa-instagram:hover {
   color: #c05466;
 }
@@ -23,17 +20,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 100px 50px;
-  text-align: center;
+  padding: 100px 100px;
 }
 
 .banner .textBx {
   max-width: 700px;
+  text-align: left;
 }
 
 .banner .textBx h2 {
   font-size: 2em;
   line-height: 2.5;
+  text-transform: uppercase;
 }
 
 .banner .textBx p {
@@ -63,6 +61,8 @@ body {
   height: 450px;
   width: 450px;
   overflow: visible;
+  box-shadow: 0 0 20px #ffff4c;
+  overflow: hidden;
 }
 
 .banner .imgBx img {
@@ -170,18 +170,19 @@ body {
 .swiper-slide {
   width: 200px;
   height: 300px;
-  background: rgba(255, 255, 255, .05);
+  background: rgba(255, 255, 255, 0.05);
   /* padding: 15px; */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   position: relative;
-  box-shadow:  0 15px 35px rgba(0,0,0,.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(5px);
-  opacity: .5;
-  transition: .5s;
+  opacity: 0.5;
+  transition: 0.5s;
   padding: 20px;
+  overflow: hidden;
 }
 
 .swiper-slide:hover {
@@ -212,6 +213,7 @@ body {
 
 .swiper-slide .textBx {
   text-align: center;
+  /* overflow: hidden; */
 }
 
 .swiper-slide .textBx h2 {
@@ -222,7 +224,6 @@ body {
   font-size: 18px;
   margin-top: 20px;
   line-height: 1.1;
-
 }
 
 .swiper-slide .textBx ul {
@@ -231,6 +232,12 @@ body {
   justify-content: center;
   width: 100%;
   text-align: center;
+  transform: translateY(60px);
+  transition: 0.5s;
+}
+
+.swiper-slide:hover ul {
+  transform: translateY(0);
 }
 
 .swiper-slide .textBx ul li {
@@ -241,7 +248,7 @@ body {
 .swiper-slide .textBx ul li a {
   color: #fff;
   opacity: 0;
-  transition: .5s;
+  transition: 0.5s;
   font-size: 20px;
 }
 
@@ -255,4 +262,82 @@ body {
 
 .swiper-slide .textBx ul li a:hover .fa-twitter {
   color: #378cd1;
+}
+
+/* History */
+
+.history {
+  min-height: 100vh;
+  background: linear-gradient(135deg , #fff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  padding: 50px 100px;
+}
+
+.history .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 40px; */
+}
+
+.history h3 {
+  margin-bottom: 50px;
+  font-size: 3em;
+  color: #111;
+  text-transform: uppercase;
+}
+
+.history .textBox {
+  max-width: 700px;
+  margin-right: 40px;
+}
+
+.history .textBox h2 {
+  font-size: 1.5em;
+  line-height: 30px;
+  color: #444;
+}
+
+.history .imgBx {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 20px #333;
+}
+
+.history .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Credits */
+
+.credits {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.creator p:nth-child(1) {
+  padding: 20px 0 10px 0;
+}
+
+.creator p:nth-child(2) {
+  padding: 0 0 10px 0;
+}
+
+.creator p {
+  margin: 0;
 }
