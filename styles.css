@@ -319,6 +319,127 @@
   object-fit: cover;
 }
 
+/* Tournaments */
+
+.tourn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 50px 80px;
+  background:#161623;
+  /* overflow: hidden; */
+}
+
+.tourn H2 {
+  color: #fff;
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 2em;
+}
+
+.tourn figure {
+  width: 900px;
+  height: 475px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tourn figure .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 634px;
+  overflow: hidden;
+  border-radius: 15px;
+  
+  box-shadow: 0 0 20px  #ffff4c;
+}
+
+.tourn figure .imgBx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tourn figure .textBx {
+  position: absolute;
+  bottom: -10%;
+  right: -10%;
+  height: 300px;
+  width: 700px;
+  background: linear-gradient(150deg , #ffffff00 , #ffffff75);
+  z-index: 1000;
+  backdrop-filter: opacity(.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, .2);
+  text-align: right;
+}
+
+.tourn figure .textBx .text {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  text-align: center;
+}
+
+.tourn figure .textBx .text h4 {
+  background: linear-gradient(45deg , #378cd1 60%, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+  /* color: #111; */
+}
+
+.tourn figure .textBx a {
+  text-decoration: none;
+  padding: 5px 10px;
+  background: transparent;
+  border: 2px solid;
+  border-color: #f8f9fa;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #f8f9fa;
+  transition: .5s;
+}
+
+.tourn figure .textBx a:hover {
+  color: #378cd1;
+  background: #f8f9fa;
+}
+
+/* .tournBx {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  width: 80%;
+}
+
+.tournBx .imgBx {
+  position: relative;
+  width: 634px;
+  height: 475px;
+  object-fit: cover;
+}
+
+.tournBx .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition-timing-function: ease-out;
+  transition-duration: .2s;
+  transition-property: transform ,-webkit-transform;
+} */
 
 /* Credits */
 
